@@ -1,0 +1,36 @@
+$first: white;
+$second-bg: #181e28;
+$third-bg: #364156;
+$maincolor: #0ef;
+$dark: rgb(44, 44, 44);
+$text1: "Roboto";
+$text2: cursive;
+
+.uploadSection{
+  margin-top: 2px;
+  >h4{
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    color: $maincolor;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  >.filebtn{
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+
+    >input{
+      font-size: 16px;
+      margin-top: 30px;
+      margin-left:2rem;
+    }
+    // >input::file-selector-button{
+    //   color: $maincolor;
+    // }
+    >#btn{
+      width: 90px;
+    }
+  }
+}

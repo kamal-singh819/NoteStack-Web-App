@@ -1,0 +1,78 @@
+$first: white;
+$second-bg: #181e28;
+$third-bg: #364156;
+$maincolor: #0ef;
+$dark: rgb(44, 44, 44);
+$text1: "Roboto";
+$text2: cursive;
+
+/* styles.css */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: $third-bg;
+}
+
+h1 {
+  font-family: cursive;
+  color: $maincolor;
+}
+
+.menu {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.9rem;
+}
+
+.menu > a {
+  text-decoration: none;
+  color: $maincolor;
+  font-size: 18px;
+}
+
+.menu-button {
+  display: none;
+  cursor: pointer;
+  color: $first;
+  padding: 0.3rem;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 590px) {
+  nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+  }
+  .menu {
+    display: none;
+  }
+
+  .menu.open {
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    position:absolute;
+    width: 100%;
+    height: 230%;
+    background-color: $second-bg;
+    align-items:center;
+
+    a:hover{
+      color: $first;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-shadow: #FC0 4px 1px 10px;
+    }
+  
+  }
+
+  .menu-button {
+    display: block;
+  }
+}

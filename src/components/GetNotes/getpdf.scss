@@ -1,0 +1,31 @@
+$first: white;
+$second-bg: #181e28;
+$third-bg: #364156;
+$maincolor: #0ef;
+$dark: rgb(44, 44, 44);
+$text1: "Roboto";
+$text2: cursive;
+
+div{
+  >h2{
+    color: $first;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+}
+
+.list-btn{
+  padding: 4px;
+  font-size: 16px;
+  width: 15rem;
+  transition: 0.4s ease;
+}
+
+.list-btn:hover{
+  background-color: $maincolor;
+  color: black;
+  transform: scale(1.07);
+}
